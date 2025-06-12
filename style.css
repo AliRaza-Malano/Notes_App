@@ -3,14 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+h1{
+    margin: 10px;
+}
 body {
     font-family: Arial, sans-serif;
     background: #f2f2f2;
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 main {
@@ -75,7 +80,6 @@ main {
     cursor: pointer;
     width: 120px;
     height: 435x;
-    margin-left: 10px;
     /* padding: 8px 15px;
     cursor: pointer; */
 }
@@ -104,4 +108,48 @@ main {
 .delete-btn {
     color: red;
     cursor: pointer;
+}
+
+
+/* 📱 Small Devices - up to 700px */
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    #left {
+        margin: auto;
+        width: 95%;
+        order: 2;
+    }
+
+    #right {
+        margin: auto;
+        width: 95%;
+        order: 1;
+    }
+
+    #addbtn {
+        width: 100%;
+    }
+}
+
+/* 💻 Medium Devices - 701px to 1080px */
+@media (min-width: 700px) and (max-width: 1080px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left {
+        margin: auto;
+        width: 100%;
+        order: 2;
+    }
+
+    #right {
+        margin: auto;
+        width: 100%;
+        order: 1;
+    }
 }
