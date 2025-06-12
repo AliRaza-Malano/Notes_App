@@ -19,7 +19,7 @@ A simple and responsive Notes App that allows users to create, edit, delete, and
 
 ## 🔗 Live Preview
 
-[Click here to try the Notes App](https://aliraza-malano.github.io/Notes_App/)
+[Click here to try the Notes App](/https://aliraza-malano.github.io/Notes_App/)
 
 ## 📂 Project Structure
 
