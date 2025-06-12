@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     margin: 10px;
 }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -80,8 +82,6 @@ main {
     cursor: pointer;
     width: 120px;
     height: 435x;
-    /* padding: 8px 15px;
-    cursor: pointer; */
 }
 
 #information {
@@ -89,6 +89,7 @@ main {
     height: 300px;
     padding: 10px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .note {
@@ -114,7 +115,9 @@ main {
 /* 📱 Small Devices - up to 700px */
 @media (max-width: 700px) {
     main {
+        display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     #left {
@@ -137,6 +140,7 @@ main {
 /* 💻 Medium Devices - 701px to 1080px */
 @media (min-width: 700px) and (max-width: 1080px) {
     main {
+        gap: 10px;
         display: flex;
         flex-direction: column;
     }
